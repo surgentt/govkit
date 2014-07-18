@@ -104,6 +104,18 @@ module GovKit
         get_uri('/committees/', :query => options)
       end
     end
+
+    class District < OpenStatesResource
+      # sldu/ny-22
+      def self.find(boundry_id)
+        get_uri("/districts/boundary/#{boundry_id}/")
+      end
+
+      # ny, upper or lower
+      def self.search(options = {})
+        result = geturi('/districts/', :query => options)
+      end
+    end
     
     class Role < OpenStatesResource; end
 
