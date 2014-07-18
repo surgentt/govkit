@@ -118,7 +118,7 @@ module GovKit
       # end
 
       def self.search(state, chamber)
-        get_uri('/districts/#{state}/#{chamber}')
+        get_uri("/districts/#{state}/#{chamber}/")
       end
     end
     
