@@ -113,7 +113,7 @@ module GovKit
 
       # ny, upper or lower
       def self.search(options = {})
-        result = geturi('/districts/', :query => options)
+        geturi('/districts/', :query => options)
       end
     end
     
