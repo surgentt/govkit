@@ -113,8 +113,12 @@ module GovKit
 
       # ny, upper or lower
       #/ny/upper
-      def self.search(options = {})
-        get_uri('/districts/', :query => options)
+      # def self.search(options = {})
+      #   get_uri('/districts/', :query => options)
+      # end
+
+      def self.search(state, chamber)
+        get_uri('/districts/#{state}/#{chamber}')
       end
     end
     
