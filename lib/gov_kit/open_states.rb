@@ -106,13 +106,10 @@ module GovKit
     end
 
     class District < OpenStatesResource
-      # sldu/ny-22
-      def self.find(boundry_id)
-        get_uri("/districts/boundary/#{boundry_id}/")
-      end
+      # def self.find(boundry_id)
+      #   get_uri("/districts/boundary/#{boundry_id}/")
+      # end
 
-      # ny, upper or lower
-      #/ny/upper
       # def self.search(options = {})
       #   get_uri('/districts/', :query => options)
       # end
