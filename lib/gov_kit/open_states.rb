@@ -106,9 +106,10 @@ module GovKit
     end
 
     class District < OpenStatesResource
-      # def self.find(boundry_id)
-      #   get_uri("/districts/boundary/#{boundry_id}/")
-      # end
+      def self.find(boundry_id)
+        nil
+        # get_uri("/districts/boundary/#{boundry_id}/")
+      end
 
       # def self.search(options = {})
       #   get_uri('/districts/', :query => options)
